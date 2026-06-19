@@ -1,10 +1,11 @@
+import DashboardLayout from "../components/layout/DashboardLayout";
 
 const AnalyticsPage = () => {
     return(
         <>
-            <div className="text-white">
-                Analytics
-            </div>
+        <DashboardLayout>
+            <div className="text-white">Analytics</div>
+        </DashboardLayout>
         </>
     );
 }

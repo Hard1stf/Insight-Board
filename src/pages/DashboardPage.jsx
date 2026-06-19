@@ -1,10 +1,11 @@
+import DashboardLayout from "../components/layout/DashboardLayout";
 
 const DashboardPage = () => {
     return(
         <>
-            <div className="text-white">
-                Dashboard
-            </div>
+            <DashboardLayout>
+                <div className="text-white">Dashboard</div>
+            </DashboardLayout>
         </>
     );
 }

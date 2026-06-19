@@ -1,10 +1,11 @@
+import DashboardLayout from "../components/layout/DashboardLayout";
 
 const NotFoundPage = () => {
     return(
         <>
-            <div className="text-white">
-                Not Found
-            </div>
+        <DashboardLayout>
+            <div className="text-white">Not Found</div>
+        </DashboardLayout>
         </>
     );
 }
