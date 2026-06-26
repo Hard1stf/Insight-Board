@@ -12,7 +12,7 @@ const MobileSidebar = () => {
           <Menu className="text-orange-600" />
         </button>
         {isOpen && (
-          <div className="p-6 fixed inset-0 h-screen w-64 bg-black">
+          <div className="p-6 fixed inset-0 h-screen w-64 bg-black/80">
             <button onClick={() => setIsOpen(false)}>
               <X />
             </button>

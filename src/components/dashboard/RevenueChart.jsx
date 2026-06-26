@@ -5,8 +5,9 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
+  CartesianGrid,
 } from 'recharts';
-import { revenueData } from '../../data/revenueData';
+import { revenueData } from '../../mock/revenueData';
 
 const RevenueChart = () => {
   return (
@@ -15,8 +16,9 @@ const RevenueChart = () => {
         <LineChart data={revenueData}>
           <XAxis dataKey="month" />
           <YAxis />
-            <Tooltip />
-          <Line dataKey="revenue" type="monotone" />
+          <Tooltip />
+          <Line strokeWidth={3} dot={false} stroke='#06b6d4' dataKey="revenue" type="monotone" />
+          <CartesianGrid strokeDasharray="3 3" />
         </LineChart>
       </ResponsiveContainer>
     </>

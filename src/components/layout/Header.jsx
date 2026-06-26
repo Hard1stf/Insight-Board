@@ -3,7 +3,7 @@ import MobileSidebar from './MobileSidebar';
 const Header = () => {
   return (
     <>
-      <div className="bg-zinc-700 text-zinc-400 p-3 flex items-center justify-between gap-4">
+      <div className="bg-zinc-700 text-zinc-400 p-3 sticky top-0 left-0 z-50 flex items-center justify-between gap-4">
         <MobileSidebar />
         <h1>Page Title</h1>
         <div className="flex items-center gap-4">

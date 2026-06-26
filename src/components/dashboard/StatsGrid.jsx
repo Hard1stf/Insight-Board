@@ -1,10 +1,10 @@
-import { statsData } from '../../data/statsData';
+import { statsData } from '../../mock/statsData';
 import StatsCard from './StatsCard';
 
 const StatsGrid = () => {
   return (
     <>
-      <div className="grid-cols-1 grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6">
         {statsData.map((stats) => (
           <StatsCard
             key={stats.id}
